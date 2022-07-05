@@ -1,0 +1,87 @@
+td,th {
+	font-family: monospace;
+	padding: 4px;
+	background-color: #ccc;
+}
+
+label {
+	vertical-align: top;
+    font-size: 20px;
+    font-family:monospace;
+    color: white;
+}
+#form
+{
+    text-align: center;
+    text-shadow: 20px;
+
+}
+body{
+    background: linear-gradient(rgba(0,0, 0, 0.4),rgba(0,0, 0, 0.4)) , url("https://media.istockphoto.com/photos/buying-in-the-library-with-the-shopping-cart-picture-id1143006264");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+   
+
+
+#items_table {
+	padding: 30px;
+	margin-top: 20px;
+	margin-right: 50%;
+   align-content: center;
+   height: 150px;
+   width: 1130px;
+   border: transparent;
+   text-decoration-line: underline;  
+   font-family: monospace;  
+   table-layout: auto;
+   
+  
+}
+h2{
+    background-color: antiquewhite;
+    width: 200px;
+   margin-left: 40px;
+}
+
+#items_table h3 {
+	font-size: 18px;
+	margin-top: 0px;
+	font-family: sans-serif;
+	background-color:burlywood;
+}
+.legend
+{
+    text-align: center;
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: rgba(0,0, 0.5, 0.2);
+
+}
+#fieldset
+{
+    text-align: center;
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color:rgba(0,0,0.5, 0,2);
+    font-family:fantasy;
+    align-content: space-between;
+    align-items: center;
+}
+button
+{
+  background-color: aqua;
+  border: none;
+  margin: 10px;
+  padding: 8px;
+  width: 70px;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+
+td,th {
+	font-family: monospace;
+	padding: 4px;
+	background-color: #ccc;
+}
+
+label {
+	vertical-align: top;
+	background-color:bisque;
+}
+
+#main {
+	border: 1pc blue;
+	padding: 6px;
+	background-color:blue;
+	margin-right: 50%;
+}
+
+#items_table {
+	border: 1px dotted blue;
+	padding: 6px;
+	margin-top: 12px;
+	margin-right: 50%;
+	background-color:burlywood;
+}
+
+#items_table h3 {
+	font-size: 18px;
+	margin-top: 0px;
+	font-family: sans-serif;
+	background-color:burlywood;
+}

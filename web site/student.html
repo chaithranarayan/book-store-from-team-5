@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book world</title>
+    <link rel="stylesheet" href="student.css">
+    
+    
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+         
+            <div>
+                <a href='index.html'><h1>Book World</h1></a>
+ 
+            
+            </div>
+           
+            <nav>
+                <ul id='MenuItems'>
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="admin1.html">Admin</a></li>
+                  <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">User Login</button></li>
+                  <!-- <li><a href="book.html">Books</a></li>
+                <li><a href="cart2.html">Cart</a></li>   -->
+                </ul>
+             
+            </nav>
+        </div>
+       
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                   <button type='button'onclick='login()'class='toggle-btn1'>Log In</button> 
+                    <button type='button'onclick='register()'class='toggle-btn2'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <label for="">Email:</label>
+                    <input type='email' id="e-mail" class='input-field' name="Email" pattern="[A-Z,a-z]{4,16}" title="First name should contain 4-16 characters only"  required >
+                 		    <label for="">Password:</label><input type='password'class='input-field' id="pass-id" pattern="[A-Z,0-9,a-z]{8,16}" title="Enter valid password"  required>
+		    <input type='checkbox'class='check-box'><label for="">Remember Password:</label>
+     
+     <a href="book.html"><input type="button" class="submit-btn" value="Login" id="submit" onclick="validate()"/></a>
+        </form>
+		 <form id='register' class='input-group-register'>
+		     <label for="">First Name:</label><input type='text' id="fname" class='input-field' pattern="[A-Z,a-z]{4,16}" title="First name should contain 4-16 characters only"  required>
+		     <label for="">Last Name:</label><input type='text' id="laname" class='input-field' pattern="[A-Z,a-z]{1,16}" title="Last name should contain 1-16 characters only"  required>
+		     <label for="">Email Id:</label><input type='email' id="email" class='input-field' required>
+		     <label for="">Password:</label><input type='password' id="pass" class='input-field' pattern="[A-Z,0-9,a-z]{8,16}" title="Password must contain 1 uppercase, 1 lowercase, numbers & 8-16 characters"  required>
+		     <label for="">Confirm Password:</label><input type='password' id="con" class='input-field' pattern="[A-Z,0-9,a-z]{8,16}" title="Must be same as password field"  required>
+             <label for=""  id="gen" class="input-field1"> Gender: </label><br>
+             <input type="radio" name="Gender" id="gender1"> <label for="" class="input-field">Male </label> 
+              <input type="radio" name="Gender" id="gender2"><label for="" class="input-field"> Female </label> 
+             <input type="radio" name="Gender" id="gender2"><label for="" class="input-field"> Others </label><br>
+             <input type='checkbox' id="check" class='check-box' required> <label for="">I agree to the terms and conditions</label>
+    
+                    <button type='submit' id="res" class='submit-btn'>Register</button>
+                  
+	         </form>
+             
+            </div>
+        </div>
+    </div>
+    <script>
+        // alert("registration is successfull");
+                var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<title> CART</title>
+<script src="cart.js"></script>
+<link rel="stylesheet" href="cart1.css">
+</head>
+<body background="" >
+<form style="text-align: center" name="ShoppingList">
+    <fieldset id="fieldset">
+        <legend style="font-size: 30px;text-align: center">Shopping cart</legend> <br></style>
+        <label for="Item">Item:</label>  <input type="text" name="Item" required><br> <br> <br>
+        <label for="Quantity">Quantity:</label><input type="number" name="Quantity" required><br> <br> 
+       
+
+        <button type="button" id="save" value="Save" name="save"  onclick="SaveItem()"> Save</button>
+       
+       <br> <br>
+    </fieldset>
+    <center>
+    <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        
+       <button type="button" id="clear" value="Clear" onclick="ClearAll()"> clear</button> <br>
+       <!-- <button type="button" id="delete"  value="Delete" onclick="RemoveItem()">proceed</button> -->
+
+    </div>
+</center>
+</form>
+</body>
+</html>

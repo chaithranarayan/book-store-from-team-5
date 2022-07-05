@@ -1,0 +1,46 @@
+.btn{
+    background-color: aquamarine;
+    border: 40px;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 30px;
+    padding: 5px;
+    background-size: 40px;
+}
+.heading{
+text-align: center;
+}
+body{
+    /* text-align: center; */
+    background-color: azure;
+}
+.main{
+    display:flex; 
+    
+}
+.main1{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-evenly;
+    /* margin-left: 100px; */
+}
+.main2 ,.main3{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content:space-evenly;
+
+    /* margin-left: 100px; */
+    margin-bottom: 40px;
+}
+.main2{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
