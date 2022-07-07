@@ -1,32 +1,136 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-<title> CART</title>
-<script src="cart.js"></script>
-<link rel="stylesheet" href="cart1.css">
-</head>
-<body background="" >
-<form style="text-align: center" name="ShoppingList">
-    <fieldset id="fieldset">
-        <legend style="font-size: 30px;text-align: center">Shopping cart</legend> <br></style>
-        <label for="Item">Item:</label>  <input type="text" name="Item" required><br> <br> <br>
-        <label for="Quantity">Quantity:</label><input type="number" name="Quantity" required><br> <br> 
-       
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>books</title>
+    <link rel="stylesheet" href="cart2.css" />
+    <script src="cart2.js" async></script>
+  </head>
 
-        <button type="button" id="save" value="Save" name="save"  onclick="SaveItem()"> Save</button>
-       
-       <br> <br>
-    </fieldset>
-    <center>
-    <div id="items_table">
-        <h2>Shopping List</h2>
-        <table id="list"></table>
-        
-       <button type="button" id="clear" value="Clear" onclick="ClearAll()"> clear</button> <br>
-       <!-- <button type="button" id="delete"  value="Delete" onclick="RemoveItem()">proceed</button> -->
+  <body>
+    <!-books->
+      <section class="container content-section">
+        <h2 class="section-header">Books</h2><hr>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Clean code</span>
+            <img class="shop-item-image" src="book3.jpeg">
+            <div class="shop-item-details">
+              <span class="shop-item-price">Rs.300</span>
+              <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+            </div>
+          </div>
+          <hr>
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Good Health</span>
+              <img class="shop-item-image" src="book12.jpeg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">Rs.100</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+              </div>
+            </div>
+            <hr>
+            <div class="shop-items">
+                <div class="shop-item">
+                  <span class="shop-item-title">All the light we cannot see</span>
+                  <img class="shop-item-image" src="book11.jpeg">
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.150</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                  </div>
+                </div>
+                <hr>
+                <div class="shop-items">
+                    <div class="shop-item">
+                      <span class="shop-item-title">The shadow king</span>
+                      <img class="shop-item-image" src="book10.jpeg">
+                      <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="shop-items">
+                        <div class="shop-item">
+                          <span class="shop-item-title">World History</span>
+                          <img class="shop-item-image" src="book8.jpeg">
+                          <div class="shop-item-details">
+                            <span class="shop-item-price">Rs.250</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                              <span class="shop-item-title">Get Programming</span>
+                              <img class="shop-item-image" src="book5.jpeg">
+                              <div class="shop-item-details">
+                                <span class="shop-item-price">Rs.200</span>
+                                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                              </div>
+                            </div>
+                            <hr>
+            <div class="shop-items">
+                <div class="shop-item">
+                  <span class="shop-item-title">The power of habit</span>
+                  <img class="shop-item-image" src="book14.jpeg">
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.150</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                  </div>
+                </div>
+                <hr>
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Beginning programming</span>
+              <img class="shop-item-image" src="book4.jpeg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">Rs.100</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Geography of india</span>
+              <img class="shop-item-image" src="book2.jpeg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">Rs.230</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+              </div>
+            </div>
+            <hr>
+            <div class="shop-items">
+                <div class="shop-item">
+                  <span class="shop-item-title">Types and programming languages</span>
+                  <img class="shop-item-image" src="book7.jpeg">
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.250</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                  </div>
+                </div>
+      </section>
 
-    </div>
-</center>
-</form>
-</body>
-</html>
+      <!-cart->
+        <section class="container content-section">
+          <h2 class="section-header">Cart</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Book details</span>
+            <span class="cart-price cart-header cart-column">Price</span>
+            <span class="cart-quantity cart-header cart-column">Quantity</span>
+          </div>
+          <div class="cart-items">
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.0</span>
+          </div>
+          <hr>
+          <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+        </section>
+
+        <!-css->
+          <link rel="stylesheet" href="books.css" />
+          <!-js->
+            <script src="book.js" async></script>
